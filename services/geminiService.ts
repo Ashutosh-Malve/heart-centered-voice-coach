@@ -122,10 +122,10 @@ export const generateScenarios = async (): Promise<Scenario[]> => {
   const systemInstruction = `
     You are an expert soft-skills coach designing practice scenarios for Heart-Centered Communication.
     
-    Create 3 distinct, high-stress conflict scenarios where a user must practice staying calm, open, and non-judgmental.
+    Create 1 distinct, high-stress conflict scenario where a user must practice staying calm, open, and non-judgmental.
     
     Requirements:
-    1. **Variety**: One scenario should be 'Beginner' (personal, low stakes), one 'Intermediate' (professional), and one 'Advanced' (high emotional stakes/family).
+    1. **Variety**: The scenario can be 'Beginner', 'Intermediate', or 'Advanced'. Pick one at random or create a balanced one.
     2. **Realism**: Situations should feel gritty and real (e.g., a passive-aggressive comment, a billing error, a missed deadline).
     3. **Context**: Provide enough detail in the 'context' field so the user feels the pressure.
   `;
@@ -133,7 +133,7 @@ export const generateScenarios = async (): Promise<Scenario[]> => {
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
-      contents: "Generate 3 new practice scenarios.",
+      contents: "Generate 1 new practice scenario.",
       config: {
         systemInstruction: systemInstruction,
         responseMimeType: "application/json",

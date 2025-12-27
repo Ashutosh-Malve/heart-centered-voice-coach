@@ -78,7 +78,7 @@ const App: React.FC = () => {
             </h1>
           </div>
           <div className="text-xs text-slate-400 hidden sm:block">
-            Powered by Gemini 2.0 Flash
+          .
           </div>
         </div>
       </header>
