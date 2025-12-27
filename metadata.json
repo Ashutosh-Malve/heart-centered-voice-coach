@@ -1,0 +1,7 @@
+{
+  "name": "Heart-Centered Voice Coach",
+  "description": "An AI-powered practice arena for mastering heart-centered communication in high-stress scenarios using tone and semantic analysis.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
